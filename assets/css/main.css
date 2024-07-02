@@ -922,7 +922,12 @@ section,
     padding: 6px 20px;
     color: #ffffff;
   }
+
+    #video-background {
+        pointer-events: none; /* Evita los eventos de puntero en el video */
+    }
 }
+
 
 /* Transitions and Animations */
 .hero-content, .form-container {
