@@ -1492,11 +1492,11 @@ body {
 
 .contenedor-cartas {
   display: flex;
-  justify-content: center;  
+
   align-items: center;
   gap: 0px;
   position: relative;
- padding-inline: 200px;
+ margin: 0 0 15px 20% ;
  overflow-x: auto;
 scroll-behavior: smooth;
 scroll-snap-type: x mandatory;
@@ -1703,6 +1703,7 @@ small.productos-badge {
     overflow-x: auto;
 align-self: center;
     scroll-behavior: smooth;
+    margin: auto ;
   }
 
   .productos-card {
