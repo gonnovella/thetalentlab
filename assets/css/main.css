@@ -1576,10 +1576,14 @@ scroll-snap-type: x mandatory;
   font-size: 1.3cap;
   align-self: center;
 }
-
+/* 
 .productos-card:hover .productos-content {
   transform: rotateY(180deg);
+} */
+.productos-card.is-flipped .productos-content{
+  transform: rotateY(180deg);
 }
+
 
 @keyframes rotation_481 {
   0% {
@@ -1706,7 +1710,9 @@ small.productos-badge {
     flex: 0 0 80%;
     margin: 0 40px 0 40px;
     width: 768px;
+
   }
+
 
   .bullet {
     cursor: pointer;
@@ -1721,6 +1727,7 @@ small.productos-badge {
   .bullet.active {
     background-color: var(--accent-color);
   }
+
 
 }
 

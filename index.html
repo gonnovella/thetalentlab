@@ -476,6 +476,18 @@
       </div>
     </section> <!-- /Services Section -->
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.productos-card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', function () {
+      card.classList.toggle('is-flipped');
+    });
+  });
+});
+
+    </script>
+    <script>
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.contenedor-cartas');
   const bullets = document.querySelectorAll('.bullet');
@@ -985,10 +997,10 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#hero"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#about"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#services"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#team"> Quienes Somos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">¿Por qué TheTalentLab?</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Formaciones</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#features">Valores</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#team">Nosotros</a></li>
 
             </ul>
           </div>
