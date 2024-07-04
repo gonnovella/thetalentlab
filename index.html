@@ -492,40 +492,54 @@
       document.addEventListener('DOMContentLoaded', function () {
         const container = document.querySelector('.contenedor-cartas');
         const bullets = document.querySelectorAll('.bullet');
+    
         let currentIndex = 0;
-        let isScrolling;
+        let isScrolling = false;
     
         function showSlide(index) {
           container.scrollTo({
             left: container.offsetWidth * index,
             behavior: 'smooth'
           });
+          currentIndex = index;
+          updateBullets(index);
+        }
+    
+        function updateBullets(index) {
           bullets.forEach((bullet, i) => {
             bullet.classList.toggle('active', i === index);
           });
         }
     
-        function updateSlide() {
-          const newIndex = Math.round(container.scrollLeft / container.offsetWidth);
-          if (newIndex !== currentIndex) {
-            currentIndex = newIndex;
-            showSlide(currentIndex);
-          }
+        function handleBulletClick(index) {
+          showSlide(index);
         }
     
         bullets.forEach((bullet, index) => {
           bullet.addEventListener('click', () => {
-            currentIndex = index;
-            showSlide(index);
+            handleBulletClick(index);
           });
         });
     
         container.addEventListener('scroll', () => {
-          window.clearTimeout(isScrolling);
-          isScrolling = setTimeout(updateSlide, 100); // Adjust slide position after scrolling ends
+          if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+              updateSlide();
+              isScrolling = false;
+            });
+            isScrolling = true;
+          }
         });
     
-        showSlide(0); // Initialize first slide
+        function updateSlide() {
+          const index = Math.round(container.scrollLeft / container.offsetWidth);
+          if (index !== currentIndex) {
+            currentIndex = index;
+            updateBullets(index);
+          }
+        }
+    
+        showSlide(0); // Mostrar la primera diapositiva al cargar
       });
     </script>
     
