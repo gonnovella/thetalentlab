@@ -170,10 +170,10 @@
           <h2>¿Por qué The Talent Lab?</h2>
         </div>
         <h3>Formando a la siguiente generación de líderes</h3>
-            <p class="fst-italic">
+            <p>
               The Talent Lab surge de una necesidad actual que existe en la educación pre-universitaria. Alumnos de entre 14 y 18 años de edad se enfrentan cada año a una de las decisiones más críticas de sus carreras profesionales. Los primeros pasos a la hora de elegir tu formación académica resultan cruciales a la hora de alcanzar el éxito laboral.
             </p>
-            <p class="fst-italic">
+            <p>
               The Talent Lab apoya sus formaciones en tres pilares:
             </p>
         <ul>
@@ -288,9 +288,8 @@
                 <div class="productos-front-content">
                   <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
                 </div>
-                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
-                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
-                  metas profesionales. </p>
+                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. 
+                  Proporcionamos una comprensión completa de las diversas opciones educativas disponibles. </p>
 
               </div>
             </div>
@@ -357,11 +356,10 @@
 
                 <strong class="strong-cartas">Introducción a la Educación Financiera</strong>
                 <div class="productos-front-content">
-                  <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+                  <small class="productos-badge">Edad recomendada: 17 - 22 años</small>
                 </div>
-                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
-                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
-                  metas profesionales. </p>
+                <p class="productos-badge"><span class="spanazul">Complemento Esencial</span>. Este curso te brinda conocimientos financieros prácticos y cruciales. 
+                  Aprende sobre inversión, finanzas personales y gestión económica para tomar decisiones informadas y seguras sobre tu futuro financiero.</p>
 
               </div>
             </div>
@@ -385,11 +383,10 @@
                 <div class="productos-description">
                   <div class="productos-title">
                     <p class="productos-title">
-                      Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el
-                      camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los
-                      estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados
-                      universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones
-                      informadas y alineadas con sus pasiones y objetivos profesionales.
+                      Este curso está diseñado para complementar la educación tradicional con un plus de conocimiento financiero práctico, crucial para la vida real. 
+                      Exploraremos conceptos clave como la inversión, las finanzas personales (incluyendo la compra de coches, la gestión de deudas, y el ahorro), y más. 
+                      Nuestro objetivo es empoderar a los estudiantes con habilidades financieras esenciales que les permitirán tomar decisiones informadas y seguras sobre su futuro económico. 
+                      Este curso es ideal para jóvenes adultos que desean una base sólida en la gestión de sus finanzas personales y comprender el mundo de las inversiones.
                     </p>
                   </div>
                   <p class="productos-card-footer">
@@ -425,11 +422,10 @@
 
                 <strong class="strong-cartas">Introducción a la Vida Laboral</strong>
                 <div class="productos-front-content">
-                  <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+                  <small class="productos-badge">Edad recomendada: +18 años</small>
                 </div>
-                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
-                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
-                  metas profesionales. </p>
+                <p class="productos-badge"><span class="spanazul">Guía Profesional</span>. Prepárate para tu futuro laboral con información detallada sobre las salidas profesionales de tus estudios. 
+                  Aprende a redactar currículums, prepararte para entrevistas y conocer tus derechos laborales para una carrera exitosa.</p>
 
               </div>
             </div>
@@ -454,11 +450,11 @@
                 <div class="productos-description">
                   <div class="productos-title">
                     <p class="productos-title">
-                      Nuestro Best Seller Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el
-                      camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los
-                      estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados
-                      universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones
-                      informadas y alineadas con sus pasiones y objetivos profesionales.
+                      Este programa se centra en orientar a los estudiantes sobre las salidas profesionales de las carreras que desean estudiar, ayudándoles a entender dónde pueden terminar 
+                      trabajando y qué roles pueden desempeñar en el futuro.
+                      Los estudiantes aprenderán sobre la búsqueda de empleo, redacción de currículums, preparación para entrevistas, y derechos laborales. 
+                      Además, proporcionamos información detallada sobre las expectativas del mercado laboral y las habilidades necesarias para tener éxito en diversas industrias. 
+                      Este curso es perfecto para aquellos que están listos para dar el primer paso en su carrera profesional con confianza y conocimiento.
                     </p>
                   </div>
                   <p class="productos-card-footer">
@@ -480,37 +476,47 @@
       </div>
     </section> <!-- /Services Section -->
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const container = document.querySelector('.contenedor-cartas');
-        const bullets = document.querySelectorAll('.bullet');
-        let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.contenedor-cartas');
+  const bullets = document.querySelectorAll('.bullet');
+  let currentIndex = 0;
+  let isScrolling;
 
-        function showSlide(index) {
-          container.scrollTo({
-            left: container.offsetWidth * index,
-            behavior: 'smooth'
-          });
-          bullets.forEach((bullet, i) => {
-            bullet.classList.toggle('active', i === index);
-          });
-        }
+  function showSlide(index) {
+    container.scrollTo({
+      left: container.offsetWidth * index,
+      behavior: 'smooth'
+    });
+    bullets.forEach((bullet, i) => {
+      bullet.classList.toggle('active', i === index);
+    });
+  }
 
-        function nextSlide() {
-          currentIndex = (currentIndex + 1) % bullets.length;
-          showSlide(currentIndex);
-        }
+  function updateSlide() {
+    const newIndex = Math.round(container.scrollLeft / container.offsetWidth);
+    if (newIndex !== currentIndex) {
+      currentIndex = newIndex;
+      showSlide(currentIndex);
+    } else {
+      // Ensure it snaps to the current slide if no change in index
+      showSlide(currentIndex);
+    }
+  }
 
-        bullets.forEach((bullet, index) => {
-          bullet.addEventListener('click', () => {
-            currentIndex = index;
-            showSlide(index);
-          });
-        });
+  bullets.forEach((bullet, index) => {
+    bullet.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(index);
+    });
+  });
 
-        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  container.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(updateSlide, 100); // Adjust slide position after scrolling ends
+  });
 
-        showSlide(0); // Initialize first slide
-      });
+  showSlide(0); // Initialize first slide
+});
     </script>
 <script>
   let touchStartTime = 0;
@@ -543,9 +549,9 @@
           <div class="col-lg-6 mb-4">
           <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="200">
 
-            <i class="bi bi-person-fill-check"></i>
+            <i class="bi bi-eye-fill"></i>
                 <div>
-              <h4>La Formación Que Te Entiende</h4>
+              <h4>Comprensión</h4>
               <p>Nosotros no solo enseñamos, entendemos. Sabemos que no es lo mismo comunicar a un
                 adolescente que a un adulto. Nuestras formaciones están diseñadas para conectar contigo,
                 usando un lenguaje cercano y directo, porque creemos que aprender es más efectivo cuando te
@@ -556,9 +562,9 @@
           <div class="col-lg-6 mb-4">
           <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
    
-            <i class="bi bi-gear-fill"></i>
+            <i class="bi bi-hand-index"></i>
             <div>
-              <h4>Educación Adaptada a Tu Mundo</h4>
+              <h4>Cercanía</h4>
               <p>En nuestra empresa, cada formación es un viaje compartido. Tratamos a nuestros estudiantes con
                 la cercanía que necesitan, entendiendo sus inquietudes y aspiraciones. Sabemos que tu mundo es
                 diferente, y por eso adaptamos nuestras enseñanzas para que sean relevantes y emocionantes
@@ -569,8 +575,8 @@
           <div class="col-lg-6 mb-4">
           <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
 
-            <i class="bi bi-rulers"></i>            <div>
-              <h4>Formaciones a Tu Medida</h4>
+            <i class="bi bi-gear-fill"></i>            <div>
+              <h4>Adaptabilidad</h4>
               <p>Nos especializamos en el público joven porque sabemos que la comunicación efectiva es clave
                 para el aprendizaje. Nuestros cursos están diseñados pensando en tus necesidades y
                 preferencias, ofreciendo un trato personalizado que te hará sentir acompañado en cada paso de
@@ -580,8 +586,8 @@
           </div></div><!-- End Features Item-->
           <div class="col-lg-6 mb-4">
          <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-          <i class="bi bi-compass-fill"></i>            <div>
-              <h4>Hemos Estado en Tu Lugar</h4>
+          <i class="bi bi-lightbulb"></i>            <div>
+              <h4>Experiencia</h4>
 <p>Sabemos lo que estás pasando porque también estuvimos ahí. Entendemos tus desafíos y tus sueños porque hemos vivido lo mismo. 
   Por eso, nuestras formaciones no solo te enseñan, sino que te apoyan de verdad. 
   Estamos aquí para ayudarte a superar cualquier obstáculo y a alcanzar tus metas.</p>

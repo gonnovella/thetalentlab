@@ -1093,33 +1093,33 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h3 {
+.about  h3 {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.about .content .fst-italic {
+.about .fst-italic {
   color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
 
-.about .content ul {
+.about ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.about ul li {
   padding: 10px 0 0 0;
   display: flex;
 }
 
-.about .content ul i {
+.about  ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
-.about .content p:last-child {
+.about  p:last-child {
   margin-bottom: 0;
 }
 #imagenabout{
