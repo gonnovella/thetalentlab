@@ -1492,7 +1492,7 @@ body {
 
 .contenedor-cartas {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: center;  
   align-items: center;
   gap: 0px;
   position: relative;
@@ -1701,7 +1701,6 @@ small.productos-badge {
   .contenedor-cartas {
     padding-inline: 0px;
     overflow-x: auto;
-    justify-content: none;
 align-self: center;
     scroll-behavior: smooth;
   }
