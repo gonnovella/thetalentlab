@@ -482,9 +482,7 @@
         cards.forEach(card => {
           card.addEventListener('click', function () {
             card.classList.toggle('is-flipped');
-            
-            // Remove this line as it's already in the second script
-            // showSlide(0);
+            // No se necesita showSlide(0) aquí
           });
         });
       });
@@ -531,24 +529,6 @@
       });
     </script>
     
-<script>
-  let touchStartTime = 0;
-
-  document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('touchstart', (e) => {
-      touchStartTime = Date.now();
-    });
-
-    card.addEventListener('touchend', (e) => {
-      const touchDuration = Date.now() - touchStartTime;
-
-      // Si el toque dura menos de 300ms, lo consideramos un toque válido para girar la carta
-      if (touchDuration < 300) {
-        card.classList.toggle('flip');
-      }
-    });
-  });
-</script>
 
 
 
