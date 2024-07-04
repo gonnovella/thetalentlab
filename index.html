@@ -81,7 +81,7 @@
           <h1>THE TALENT LAB</h1>
           <h3>empowering next gen</h3>
 
-          <p>Preparamos a a la próxima generación de líderes desde uno de los momentos más críticos de su formación. 
+          <p>Preparamos a la próxima generación de líderes desde uno de los momentos más críticos de su formación. 
             </p><p>Un trato cercano, un conocimiento completo del abanico académico y un foco claro en el mundo laboral, 
             hacen a The Talent Lab el complemento perfecto a la enseñanza tradicional para nuestros jóvenes.</p>
           <button class="ctahero" onclick="scrollToContact()">Mas información</button>
@@ -487,7 +487,51 @@
         });
       });
     </script>
-    
+     <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.contenedor-cartas');
+  const bullets = document.querySelectorAll('.bullet');
+  let currentIndex = 0;
+  let isScrolling;
+
+  function showSlide(index) {
+    container.scrollTo({
+      left: container.offsetWidth * index,
+      behavior: 'smooth'
+    });
+    bullets.forEach((bullet, i) => {
+      bullet.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % bullets.length;
+    showSlide(currentIndex);
+  }
+
+  bullets.forEach((bullet, index) => {
+    bullet.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(index);
+    });
+  });
+
+  container.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+
+    isScrolling = setTimeout(() => {
+      const scrollLeft = container.scrollLeft;
+      const slideWidth = container.offsetWidth;
+      currentIndex = Math.round(scrollLeft / slideWidth);
+      showSlide(currentIndex);
+    }, 66);
+  });
+
+  showSlide(0); // Initialize first slide
+});
+
+
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const container = document.querySelector('.contenedor-cartas');
