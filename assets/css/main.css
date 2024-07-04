@@ -1709,7 +1709,7 @@ small.productos-badge {
     flex: 0 0 80%;
     margin: 0 40px 0 40px;
     width: 768px;
-
+    scroll-snap-align: start;
   }
 
 
