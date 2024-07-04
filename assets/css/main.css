@@ -1105,11 +1105,13 @@ section,
 .about ul {
   list-style: none;
   padding: 0;
+  list-style-type: none;
 }
 
 .about ul li {
   padding: 10px 0 0 0;
   display: flex;
+  list-style-type: none;
 }
 
 .about  ul i {
