@@ -167,6 +167,10 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
+.navmenu li {
+ margin-right: 7.5rem;
+}
+
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -820,7 +824,6 @@ section,
   object-fit: cover;
   z-index: 1; /* Coloca la imagen de fondo detrás del contenido */
 }
-
 .hero img {
   display: none;
 }
@@ -829,9 +832,11 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   z-index: 3;
   flex-direction: column; /* Ajusta la dirección de los elementos al centro */
+  overflow: hidden;
+  position: relative;
 }
 
 .hero-content {
@@ -839,11 +844,12 @@ section,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+  max-width: 80%;
   text-align: center;
 }
 
 .hero-content h1 {
+
   font-size: 88px;
   font-weight: bold;
   font-family: var(--heading-font);
@@ -861,6 +867,7 @@ section,
 .hero-content p {
   font-size: 18px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .hero p {
@@ -922,26 +929,23 @@ section,
   }
 
   .ctahero {
-    margin: 0px 15px 0 0;
+    margin: 30px 0 0 0;
     padding: 6px 20px;
     color: #ffffff;
   }
-
   .hero video {
-display: none;
-    }
-
-    .hero img {
-      position: absolute; /* Asegura que la imagen de fondo esté detrás del contenido */
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1; /* Coloca la imagen de fondo detrás del contenido */
+    display: none;
   }
+  .hero img {
+    position: absolute; /* Asegura que la imagen de fondo esté detrás del contenido */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Coloca la imagen de fondo detrás del contenido */
 }
-
+}
 
 /* Transitions and Animations */
 .hero-content, .form-container {
@@ -1120,10 +1124,10 @@ display: none;
 }
 #imagenabout{
   margin: 0 auto;
-  margin-top: 16%;
+  margin-top: 100px;
 }
-
-/* .about img{
+/* 
+.about img{
   margin: 0 auto;
   margin-top: 16%;
 } */
@@ -1133,6 +1137,10 @@ display: none;
   transition: 0.3s;
   color: #494646;
 }
+
+.about i {
+  color: var(--accent-color);
+}
 @media (max-width: 768px) {
   .about h2 {
     font-size: 30px;
@@ -1140,6 +1148,12 @@ display: none;
   #imagenabout{
     display: none;
 
+  }
+}
+@media (max-width: 1372px) {
+  #imagenabout{
+    margin: 0 auto;
+    margin-top: 150px;
   }
 }
 
@@ -1225,26 +1239,33 @@ display: none;
 }
 
 
-
-
 @media (max-width:768px){
   body {
  font-size: 14px;
  margin: 10px;
  }
  #valores-items{
- width: 95%;
+  display: flex;
+  flex-direction: column;
  margin: 0 auto;
  }
 }
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-/* .services span {
+  .spanazul {
   color: var(--accent-color);
-  font-size: 17px;
+
+}
+  .services h2 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 28px;
+  transition: 0.3s;
+  color: #494646;
 }
 
+/*
 .contenedor-cartas {
   display: flex;
   justify-content: center;
@@ -1252,13 +1273,6 @@ display: none;
   gap: 1px;
 }
 
-.services h2 {
-  font-weight: 700;
-  margin: 10px 0 15px 0;
-  font-size: 28px;
-  transition: 0.3s;
-  color: #494646;
-}
 
 
 
@@ -1393,8 +1407,8 @@ small.productos-badge{
 
 .productos-title p {
   width: 100%;
-  
 }
+
 
 .productos-card-footer {
   color: #ffffff88;
@@ -1454,7 +1468,7 @@ small.productos-badge{
 
 @media (max-width=768px){
 
-} */
+} */ */
 
 /* General Styles */
 /* General Styles */
@@ -1555,7 +1569,7 @@ scroll-behavior: smooth;
 
 .strong-cartas {
   color: var(--accent-color);
-  font-size: medium;
+  font-size: 1.3cap;
   align-self: center;
 }
 
@@ -2038,7 +2052,101 @@ small.productos-badge {
 # Team Section
 --------------------------------------------------------------*/
 
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  height: 100%;
+}
 
+.team .member .pic {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member .social a + a {
+  margin-left: 8px;
+}
+
+/* 
 .team .member {
   overflow: hidden;
   position: relative;
@@ -2142,7 +2250,7 @@ small.productos-badge {
 }
 .team .social{
   align-items: center;
-}
+} */
 
 .team h2 {
   font-weight: 700;

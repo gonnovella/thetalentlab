@@ -14,9 +14,10 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 
   <!-- Vendor CSS Files -->
@@ -38,7 +39,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-<!-- <img src="logocuadrado.png" alt="">  -->
+        <!-- <img src="logocuadrado.png" alt="">  -->
         <!-- <h1 class="sitename">THE TALENT LAB</h1>
         <span>.
         </span> -->
@@ -46,17 +47,18 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <!-- <li><a href="#hero" class="active">Home<br></a></li> -->
-          <li><a href="#about">¿Por qué The Talent Lab?</a></li>
-          <li><a href="#services">Nuestras formaciones</a></li>
-          <li><a href="#team">¿Quiénes somos?</a></li>
-        
+
+          <li><a href="#about">¿Por qué TheTalentLab?</a></li>
+          <li><a href="#services">Formaciones</a></li>
+          <li><a href="#features">Valores<br></a></li> 
+          <li><a href="#team">Nosotros</a></li>
+          <a class="btn-getstarted" href="index.html#contact">Contacto</a>
           <li><a href="#contact" hidden>Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Contacto</a>
+
 
     </div>
   </header>
@@ -66,37 +68,41 @@
     <!-- Hero Section -->
 
     <section class="hero">
-      
+
       <!-- <img src="assets/img/a-high-resolution-depiction-of-space-with-deep-ink-pp741p00Q0uKQmHyswYNaw-T6kUdYpMQ0mmz4xW0ZnnKQ.jpeg" alt="" data-aos="fade-in"> -->
-      <img src="assets/img/a-high-resolution-depiction-of-space-with-deep-ink-pp741p00Q0uKQmHyswYNaw-T6kUdYpMQ0mmz4xW0ZnnKQ.jpeg" alt="" >
+      <img
+        src="assets/img/a-high-resolution-depiction-of-space-with-deep-ink-pp741p00Q0uKQmHyswYNaw-T6kUdYpMQ0mmz4xW0ZnnKQ.jpeg"
+        alt="">
 
       <video muted autoplay loop src="videohero.mp4"></video>
       <div class="hero-container" data-aos="fade-up">
         <div class="hero-content">
-          
+
           <h1>THE TALENT LAB</h1>
           <h3>empowering next gen</h3>
-         
-          <p>The Talent Lab surge para preparar a nuestros futuros líderes desde uno de los momentos más críticos de su formación. Basado en un trato cercano, conocimiento completo del abanico académico y un foco claro en el mundo laboral, The Talent Lab complementa la enseñanza tradicional para preparar a la próxima generación de líderes.</p>
+
+          <p>Preparamos a a la próxima generación de líderes desde uno de los momentos más críticos de su formación. 
+            </p><p>Un trato cercano, un conocimiento completo del abanico académico y un foco claro en el mundo laboral, 
+            hacen a The Talent Lab el complemento perfecto a la enseñanza tradicional para nuestros jóvenes.</p>
           <button class="ctahero" onclick="scrollToContact()">Mas información</button>
-          
+
         </div>
-         
 
-    </div>
 
-    
-  </section>
-<script>
-function scrollToContact() {
-  const aboutSection = document.getElementById('contact');
-  if (aboutSection) {
-    aboutSection.scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-}
-</script>
+      </div>
+
+
+    </section>
+    <script>
+      function scrollToContact() {
+        const aboutSection = document.getElementById('contact');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script>
 
     <!-- <section id="hero" class="hero section">
 
@@ -151,47 +157,41 @@ function scrollToContact() {
       </div>
 
     </section> -->
-    
+
     <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img id="imagenabout" src="nathan-dumlao-ewGMqs2tmJI-unsplash.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <div class="container section-title" data-aos="fade-up">
-
-
-              <H2>¿Por qué The Talent Lab?</H2>
-            </div>
-      
-            <h3>Formando a la siguiente generación de líderes</h3>
+  <div class="container" data-aos="fade-up" data-aos-delay="">
+    <div class="row gy-4">
+      <!-- Columna para el contenido (ahora en orden 1 en pantallas grandes) -->
+      <div class="col-lg-6 order-lg-1">
+        <div class="section-title" data-aos="fade-up">
+          <h2>¿Por qué The Talent Lab?</h2>
+        </div>
+        <h3>Formando a la siguiente generación de líderes</h3>
             <p class="fst-italic">
               The Talent Lab surge de una necesidad actual que existe en la educación pre-universitaria. Alumnos de entre 14 y 18 años de edad se enfrentan cada año a una de las decisiones más críticas de sus carreras profesionales. Los primeros pasos a la hora de elegir tu formación académica resultan cruciales a la hora de alcanzar el éxito laboral.
             </p>
             <p class="fst-italic">
               The Talent Lab apoya sus formaciones en tres pilares:
             </p>
-
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Trato cercano y directo, especializado en cada rango de edad.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Conocimiento completo del abanico de opciones académicas: grados universitarios, grados medios, formaciones complementarias...</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Foco claro en el mundo laboral. Formaciones orientadas a situaciones reales del mercado laboral que encontrarán los alumnos.</span></li>
-            </ul>
-            <p>
-              Nuestra experiencia, nacional e internacional, en distintos sectores tanto del mundo corporativo como relacionadas con el emprendimiento, hace que The Talent Lab sea el complemento perfecto a la enseñanza tradicional para preparar a la siguiente generación de líderes.
-            </p>
-          </div>
-        </div>
-
+        <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Trato cercano y directo, especializado en cada rango de edad.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Conocimiento completo del abanico de opciones académicas...</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Foco claro en el mundo laboral. Formaciones orientadas a situaciones reales del mercado laboral...</span></li>
+        </ul>
+        <p>
+          Nuestra experiencia, nacional e internacional, en distintos sectores tanto del mundo corporativo como relacionadas con el emprendimiento, hace que The Talent Lab sea el complemento perfecto a la enseñanza tradicional para preparar a la siguiente generación de líderes.
+        </p>
       </div>
-
-    </section><!-- /About Section -->
+      <!-- Columna para la imagen (ahora en orden 2 en pantallas grandes) -->
+      <div class="col-lg-6 order-lg-2">
+        <img id="imagenabout" src="nathan-dumlao-ewGMqs2tmJI-unsplash.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Clients Section -->
     <!-- <section id="clients" class="clients section">
@@ -249,27 +249,31 @@ function scrollToContact() {
 
     </section>/Clients Section -->
 
-    
-<!-- Services Section -->
-<section id="services" class="services section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
 
 
-    <H2>Nuestras formaciones</H2>
-  </div><!-- End Section Title -->
+        <H2>Nuestras formaciones</H2>
+      </div><!-- End Section Title -->
 
-<!-- Card Component -->
- 
-  <div class="contenedor-cartas">
-    
-    <div class="productos-card">
-      <div class="productos-content">
-        <div class="productos-back">
-          <div class="productos-back-content">
-            <svg xmlns="http://www.w3.org/2000/svg" height="37" width="50" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>            
-            <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+      <!-- Card Component -->
+
+      <div class="contenedor-cartas">
+
+        <div class="productos-card">
+          <div class="productos-content">
+            <div class="productos-back">
+              <div class="productos-back-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="37" width="50"
+                  viewBox="0 0 640 512">
+                  <path fill="#ffffff"
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                </svg>
+                <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
     
             <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
     
@@ -278,19 +282,21 @@ function scrollToContact() {
             <path d="M20.84375 0.03125C20.191406 0.0703125 19.652344 0.425781 19.21875 1.53125C18.988281 2.117188 18.5 3.558594 18.03125 4.9375C17.792969 5.636719 17.570313 6.273438 17.40625 6.75C17.390625 6.796875 17.414063 6.855469 17.40625 6.90625C17.398438 6.925781 17.351563 6.949219 17.34375 6.96875L17.25 7.25C18.566406 7.65625 19.539063 8.058594 19.625 8.09375C22.597656 9.21875 28.351563 11.847656 33.28125 16.78125C38.5 22 41.183594 28.265625 42.09375 30.71875C42.113281 30.761719 42.375 31.535156 42.75 32.84375C42.757813 32.839844 42.777344 32.847656 42.78125 32.84375C43.34375 32.664063 44.953125 32.09375 46.3125 31.625C47.109375 31.351563 47.808594 31.117188 48.15625 31C49.003906 30.714844 49.542969 30.292969 49.8125 29.6875C50.074219 29.109375 50.066406 28.429688 49.75 27.6875C49.605469 27.347656 49.441406 26.917969 49.25 26.4375C47.878906 23.007813 45.007813 15.882813 39.59375 10.46875C33.613281 4.484375 25.792969 1.210938 22.125 0.21875C21.648438 0.0898438 21.234375 0.0078125 20.84375 0.03125 Z M 16.46875 9.09375L0.0625 48.625C-0.09375 48.996094 -0.00390625 49.433594 0.28125 49.71875C0.472656 49.910156 0.738281 50 1 50C1.128906 50 1.253906 49.988281 1.375 49.9375L40.90625 33.59375C40.523438 32.242188 40.222656 31.449219 40.21875 31.4375C39.351563 29.089844 36.816406 23.128906 31.875 18.1875C27.035156 13.34375 21.167969 10.804688 18.875 9.9375C18.84375 9.925781 17.8125 9.5 16.46875 9.09375 Z M 17 16C19.761719 16 22 18.238281 22 21C22 23.761719 19.761719 26 17 26C15.140625 26 13.550781 24.972656 12.6875 23.46875L15.6875 16.1875C16.101563 16.074219 16.550781 16 17 16 Z M 31 22C32.65625 22 34 23.34375 34 25C34 25.917969 33.585938 26.730469 32.9375 27.28125L32.90625 27.28125C33.570313 27.996094 34 28.949219 34 30C34 32.210938 32.210938 34 30 34C27.789063 34 26 32.210938 26 30C26 28.359375 26.996094 26.960938 28.40625 26.34375L28.3125 26.3125C28.117188 25.917969 28 25.472656 28 25C28 23.34375 29.34375 22 31 22 Z M 21 32C23.210938 32 25 33.789063 25 36C25 36.855469 24.710938 37.660156 24.25 38.3125L20.3125 39.9375C18.429688 39.609375 17 37.976563 17 36C17 33.789063 18.789063 32 21 32 Z M 9 34C10.65625 34 12 35.34375 12 37C12 38.65625 10.65625 40 9 40C7.902344 40 6.960938 39.414063 6.4375 38.53125L8.25 34.09375C8.488281 34.03125 8.742188 34 9 34Z"></path>
     
             </g> -->
-    
-           
-            <strong class="strong-cartas">Orientación pre-Universitaria</strong>
-            <div class="productos-front-content">
-            <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+
+
+                <strong class="strong-cartas">Orientación pre-Universitaria</strong>
+                <div class="productos-front-content">
+                  <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+                </div>
+                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
+                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
+                  metas profesionales. </p>
+
+              </div>
             </div>
-            <p class="productos-badge"><span> Nuestro Best Seller</span>. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. </p>
-         
-          </div>
-        </div>
-        <div class="productos-front">
-          
-          <!-- <div class="productos-img">
+            <div class="productos-front">
+
+              <!-- <div class="productos-img">
             <div class="productos-circle">
             </div>
             <div class="productos-circle" id="right">
@@ -298,35 +304,47 @@ function scrollToContact() {
             <div class="productos-circle" id="bottom">
             </div>
           </div> -->
-    
-          <div class="productos-front-content">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>            
 
-              <strong class="strong-cartas" >Orientación pre-Universitaria</strong>
-            <div class="productos-description">
-              <div class="productos-title">
-                <p class="productos-title">
-                  Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones informadas y alineadas con sus pasiones y objetivos profesionales.
-                </p>
+              <div class="productos-front-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25"
+                  viewBox="0 0 640 512">
+                  <path fill="#ffffff"
+                    d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                </svg>
+
+                <strong class="strong-cartas">Orientación pre-Universitaria</strong>
+                <div class="productos-description">
+                  <div class="productos-title">
+                    <p class="productos-title">
+                      Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el
+                      camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los
+                      estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados
+                      universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones
+                      informadas y alineadas con sus pasiones y objetivos profesionales.
+                    </p>
+                  </div>
+                  <p class="productos-card-footer">
+                    60 Mins &nbsp; | &nbsp; 3 Sesiones
+                  </p>
+                </div>
               </div>
-              <p class="productos-card-footer">
-                30 Mins &nbsp; | &nbsp; 1 Serving
-              </p>
             </div>
           </div>
+
         </div>
-      </div>
-    
-  </div>
-    <!--END CARD-->
+        <!--END CARD-->
 
-<!-- Card Component -->
+        <!-- Card Component -->
 
-<div class="productos-card">
-  <div class="productos-content">
-    <div class="productos-back">
-      <div class="productos-back-content">
-<svg xmlns="http://www.w3.org/2000/svg" height="37" width="50" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>        <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <div class="productos-card">
+          <div class="productos-content">
+            <div class="productos-back">
+              <div class="productos-back-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="37" width="50"
+                  viewBox="0 0 512 512">
+                  <path fill="#ffffff"
+                    d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                </svg> <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
 
         <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
 
@@ -336,18 +354,20 @@ function scrollToContact() {
 
         </g> -->
 
-     
-        <strong class="strong-cartas">Introducción a la Educación Financiera</strong>
-        <div class="productos-front-content">
-        <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
-        </div>
-        <p class="productos-badge"><span> Nuestro Best Seller</span>. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. </p>
-     
-      </div>
-    </div>
-    <div class="productos-front">
-      
-      <!-- <div class="productos-img">
+
+                <strong class="strong-cartas">Introducción a la Educación Financiera</strong>
+                <div class="productos-front-content">
+                  <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+                </div>
+                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
+                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
+                  metas profesionales. </p>
+
+              </div>
+            </div>
+            <div class="productos-front">
+
+              <!-- <div class="productos-img">
         <div class="productos-circle">
         </div>
         <div class="productos-circle" id="right">
@@ -356,31 +376,43 @@ function scrollToContact() {
         </div>
       </div> -->
 
-      <div class="productos-front-content">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>          <strong class="strong-cartas">Introducción a la Educación Financiera</strong>
-        <div class="productos-description">
-          <div class="productos-title">
-            <p class="productos-title">
-              Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones informadas y alineadas con sus pasiones y objetivos profesionales.
-            </p>
+              <div class="productos-front-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 512 512">
+                  <path fill="#ffffff"
+                    d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                </svg> <strong class="strong-cartas">Introducción a la Educación Financiera</strong>
+                <div class="productos-description">
+                  <div class="productos-title">
+                    <p class="productos-title">
+                      Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el
+                      camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los
+                      estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados
+                      universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones
+                      informadas y alineadas con sus pasiones y objetivos profesionales.
+                    </p>
+                  </div>
+                  <p class="productos-card-footer">
+                    60 Mins &nbsp; | &nbsp; 3 Sesiones
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="productos-card-footer">
-            30 Mins &nbsp; | &nbsp; 1 Serving
-          </p>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--END CARD-->
+        <!--END CARD-->
 
-<!-- Card Component -->
+        <!-- Card Component -->
 
-<div class="productos-card">
-  <div class="productos-content">
-    <div class="productos-back">
-      <div class="productos-back-content">
-        <svg xmlns="http://www.w3.org/2000/svg" height="37" width="50" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>        <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <div class="productos-card">
+          <div class="productos-content">
+            <div class="productos-back">
+              <div class="productos-back-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="37" width="50"
+                  viewBox="0 0 512 512">
+                  <path fill="#ffffff"
+                    d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                </svg> <!-- <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
 
         <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
 
@@ -390,17 +422,19 @@ function scrollToContact() {
 
         </g> -->
 
-        
-        <strong class="strong-cartas">Introducción a la Vida Laboral</strong>
-        <div class="productos-front-content">
-        <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
-        </div>
-        <p class="productos-badge"><span> Nuestro Best Seller</span>. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. </p>
-     
-      </div>
-    </div>
-    <div class="productos-front">
-        <!--       
+
+                <strong class="strong-cartas">Introducción a la Vida Laboral</strong>
+                <div class="productos-front-content">
+                  <small class="productos-badge">Edad recomendada: 15 - 18 años</small>
+                </div>
+                <p class="productos-badge"><span class="spanazul"> Nuestro Best Seller</span>. Descubrimos al alumno
+                  todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y
+                  metas profesionales. </p>
+
+              </div>
+            </div>
+            <div class="productos-front">
+              <!--       
       <div class="productos-img">
         <div class="productos-circle">
         </div>
@@ -410,126 +444,174 @@ function scrollToContact() {
         </div>
       </div> -->
 
-      <div class="productos-front-content">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
-          <strong class="strong-cartas" >Introducción a la Vida Laboral</strong>
-        <div class="productos-description">
-          <div class="productos-title">
-            <p class="productos-title">
-              Nuestro Best Seller. Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones informadas y alineadas con sus pasiones y objetivos profesionales.
-            </p>
+              <div class="productos-front-content">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 512 512">
+                  <path fill="#ffffff"
+                    d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                </svg>
+                <strong class="strong-cartas">Introducción a la Vida Laboral</strong>
+                <div class="productos-description">
+                  <div class="productos-title">
+                    <p class="productos-title">
+                      Nuestro Best Seller Descubrimos al alumno todas las opciones educativas y ayudamos a que elija el
+                      camino que mejor se alinee con sus pasiones y metas profesionales. Proporcionamos a los
+                      estudiantes una comprensión completa de las diversas opciones educativas disponibles, desde grados
+                      universitarios, grados medios o formaciones complementarias, ayudándolos a tomar decisiones
+                      informadas y alineadas con sus pasiones y objetivos profesionales.
+                    </p>
+                  </div>
+                  <p class="productos-card-footer">
+                    60 Mins &nbsp; | &nbsp; 3 Sesiones
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="productos-card-footer">
-            30 Mins &nbsp; | &nbsp; 1 Serving
-          </p>
         </div>
+        <!--END CARD-->
+
       </div>
-    </div>
-  </div>
-</div>
-<!--END CARD-->
+      <div id="bullet-navigation" style="text-align:center;">
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+        <!-- Add more bullets as needed -->
+      </div>
+    </section> <!-- /Services Section -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.contenedor-cartas');
+        const bullets = document.querySelectorAll('.bullet');
+        let currentIndex = 0;
 
-</div>
-<div id="bullet-navigation" style="text-align:center;">
-  <span class="bullet"></span>
-  <span class="bullet"></span>
-  <span class="bullet"></span>
-  <!-- Add more bullets as needed -->
-</div>
-      </section> <!-- /Services Section -->
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const container = document.querySelector('.contenedor-cartas');
-            const bullets = document.querySelectorAll('.bullet');
-            let currentIndex = 0;
-    
-            function showSlide(index) {
-                container.scrollTo({
-                    left: container.offsetWidth * index,
-                    behavior: 'smooth'
-                });
-                bullets.forEach((bullet, i) => {
-                    bullet.classList.toggle('active', i === index);
-                });
-            }
-    
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % bullets.length;
-                showSlide(currentIndex);
-            }
-    
-            bullets.forEach((bullet, index) => {
-                bullet.addEventListener('click', () => {
-                    currentIndex = index;
-                    showSlide(index);
-                });
-            });
-    
-            setInterval(nextSlide, 5000); // Change slide every 5 seconds
-    
-            showSlide(0); // Initialize first slide
+        function showSlide(index) {
+          container.scrollTo({
+            left: container.offsetWidth * index,
+            behavior: 'smooth'
+          });
+          bullets.forEach((bullet, i) => {
+            bullet.classList.toggle('active', i === index);
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % bullets.length;
+          showSlide(currentIndex);
+        }
+
+        bullets.forEach((bullet, index) => {
+          bullet.addEventListener('click', () => {
+            currentIndex = index;
+            showSlide(index);
+          });
         });
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+        showSlide(0); // Initialize first slide
+      });
     </script>
-
-
-      
-<!-- Features Section -->
-<section id="features" class="features section">
-  <div class="container">
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Nuestros Valores</h2>
-    </div>
-    <div class="row gy-4" id="valores-items">
-      <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <i class="bi bi-archive row-shrink-0"></i>
-        <div>
-          <h4>Compromiso</h4>
-        </div>
-      </div><!-- End Features Item-->
-
-      <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-        <i class="bi bi-basket flex-shrink-0"></i>
-        <div>
-          <h4>Innovación</h4>
-        </div>
-      </div><!-- End Features Item-->
-
-      <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-        <i class="bi bi-broadcast flex-shrink-0"></i>
-        <div>
-          <h4>Resiliencia</h4>
-        </div>
-      </div><!-- End Features Item-->
-
-      <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-        <i class="bi bi-camera-reels flex-shrink-0"></i>
-        <div>
-          <h4>Proactividad</h4>
-        </div>
-      </div><!-- End Features Item-->
-    </div>
-  </div>
-</section><!-- /Features Section -->
-
-<!-- jQuery Script for Toggle Effect -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  $(document).ready(function () {
-    $(".toggle-text").click(function (e) {
-      e.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+  let touchStartTime = 0;
 
-      var target = $(this).data("target"); // Obtener el ID del texto adicional desde el atributo data-target
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('touchstart', (e) => {
+      touchStartTime = Date.now();
+    });
 
-      $("#" + target).slideToggle(); // Alternar la visibilidad del texto adicional correspondiente
+    card.addEventListener('touchend', (e) => {
+      const touchDuration = Date.now() - touchStartTime;
+
+      // Si el toque dura menos de 300ms, lo consideramos un toque válido para girar la carta
+      if (touchDuration < 300) {
+        card.classList.toggle('flip');
+      }
     });
   });
 </script>
 
 
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nuestros Valores</h2>
+        </div>
+        <div class="row gy-4" id="valores-items">
+          <div class="col-lg-6 mb-4">
+          <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="200">
+
+            <i class="bi bi-person-fill-check"></i>
+                <div>
+              <h4>La Formación Que Te Entiende</h4>
+              <p>Nosotros no solo enseñamos, entendemos. Sabemos que no es lo mismo comunicar a un
+                adolescente que a un adulto. Nuestras formaciones están diseñadas para conectar contigo,
+                usando un lenguaje cercano y directo, porque creemos que aprender es más efectivo cuando te
+                sientes comprendido.</p>
+            </div>
+
+          </div></div><!-- End Features Item-->
+          <div class="col-lg-6 mb-4">
+          <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+   
+            <i class="bi bi-gear-fill"></i>
+            <div>
+              <h4>Educación Adaptada a Tu Mundo</h4>
+              <p>En nuestra empresa, cada formación es un viaje compartido. Tratamos a nuestros estudiantes con
+                la cercanía que necesitan, entendiendo sus inquietudes y aspiraciones. Sabemos que tu mundo es
+                diferente, y por eso adaptamos nuestras enseñanzas para que sean relevantes y emocionantes
+                para ti.</p>
+            </div>
+
+          </div></div><!-- End Features Item-->
+          <div class="col-lg-6 mb-4">
+          <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+
+            <i class="bi bi-rulers"></i>            <div>
+              <h4>Formaciones a Tu Medida</h4>
+              <p>Nos especializamos en el público joven porque sabemos que la comunicación efectiva es clave
+                para el aprendizaje. Nuestros cursos están diseñados pensando en tus necesidades y
+                preferencias, ofreciendo un trato personalizado que te hará sentir acompañado en cada paso de
+                tu formación.</p>
+            </div>
+
+          </div></div><!-- End Features Item-->
+          <div class="col-lg-6 mb-4">
+         <div class="features-item d-row mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <i class="bi bi-compass-fill"></i>            <div>
+              <h4>Hemos Estado en Tu Lugar</h4>
+<p>Sabemos lo que estás pasando porque también estuvimos ahí. Entendemos tus desafíos y tus sueños porque hemos vivido lo mismo. 
+  Por eso, nuestras formaciones no solo te enseñan, sino que te apoyan de verdad. 
+  Estamos aquí para ayudarte a superar cualquier obstáculo y a alcanzar tus metas.</p>
+            </div>
+          </div></div><!-- End Features Item-->
+        </div>
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- jQuery Script for Toggle Effect -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".toggle-text").click(function (e) {
+          e.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+
+          var target = $(this).data("target"); // Obtener el ID del texto adicional desde el atributo data-target
+
+          $("#" + target).slideToggle(); // Alternar la visibilidad del texto adicional correspondiente
+        });
+      });
+    </script>
+
+
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
 
-      <img src="assets/img/a-high-resolution-depiction-of-space-with-deep-ink-pp741p00Q0uKQmHyswYNaw-T6kUdYpMQ0mmz4xW0ZnnKQ.jpeg" alt="">
+      <img
+        src="assets/img/a-high-resolution-depiction-of-space-with-deep-ink-pp741p00Q0uKQmHyswYNaw-T6kUdYpMQ0mmz4xW0ZnnKQ.jpeg"
+        alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -537,7 +619,8 @@ function scrollToContact() {
             <div class="text-center">
               <h3>Preparamos a los líderes del futuro</h3>
               <p>Consulta sin compromiso todas las opciones formativas que planteamos en The Talent Lab.</p>
-              <p>Más de 30 centros educativos confían en nuestras formaciones para complementar la educación de sus alumnos.</p>
+              <p>Más de 30 centros educativos confían en nuestras formaciones para complementar la educación de sus
+                alumnos.</p>
               <a class="cta-btn" href="#contact">¿Hablamos?</a>
             </div>
           </div>
@@ -546,10 +629,10 @@ function scrollToContact() {
 
     </section><!-- /Call To Action Section -->
 
-    
+
 
     <!-- Stats Section -->
-   <!--  <section id="stats" class="stats section">
+    <!--  <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -577,8 +660,8 @@ function scrollToContact() {
                   </div>
                 </div>
               </div> -->
-              <!-- End Stats Item -->
-<!--
+    <!-- End Stats Item -->
+    <!--
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
@@ -588,7 +671,7 @@ function scrollToContact() {
                   </div>
                 </div>
               </div>--><!-- End Stats Item -->
-<!--
+    <!--
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-headset flex-shrink-0"></i>
@@ -598,7 +681,7 @@ function scrollToContact() {
                   </div>
                 </div>
               </div>--><!-- End Stats Item -->
-<!--
+    <!--
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
@@ -608,7 +691,7 @@ function scrollToContact() {
                   </div>
                 </div>
               </div>--><!-- End Stats Item -->
-<!--
+    <!--
             </div>
 
           </div>
@@ -743,101 +826,52 @@ function scrollToContact() {
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="align-items-center">
+          <div class="row">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/team/Valen (Personalizado).jpeg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Miguel Valenzuela</h4>
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+                  <p>Licenciado en Administración y Dirección de Empresas por CUNEF. Comenzó su carrera centrado en la
+                    auditoría financiera trabajando para grandes corporaciones como KPMG o Grant Thornton. Tras aprobar
+                    los dos primeros niveles CFA (Analista Financiero Certificado), redirigió su carrera hacia el sector
+                    M&A (Fusiones y adquisiciones de empresas) donde actualmente lidera una boutique de más de 10
+                    profesionales.</p>
+                  <div class="social">
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div id="contenedor-team" class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <div id="Valen" class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="member d-flex align-items-start">
-                      <div class="pic"><img src="assets/img/team/Valen (Personalizado).jpeg" class="img-fluid" alt=""></div>
-                      <div class="member-info">
-                        <h4>Miguel Valenzuela</h4>
-                        <p>Licenciado en Administración y Dirección de Empresas por CUNEF. Comenzó su carrera centrado en la auditoría financiera trabajando para grandes corporaciones como KPMG o Grant Thornton. Tras aprobar los dos primeros niveles CFA (Analista Financiero Certificado), redirigió su carrera hacia el sector M&A (Fusiones y adquisiciones de empresas) donde actualmente lidera una boutique de más de 10 profesionales.</p>
-                        <div class="social">
-                          <a href="https://www.linkedin.com/in/miguel-valenzuela-pire-375797a4/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/miguel-valenzuela-pire-375797a4/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="swiper-slide">
-                  <div id="Fer" class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="member d-flex align-items-start">
-                      <div class="pic"><img src="assets/img/team/ferteam (Personalizado).jpeg" class="img-fluid" alt=""></div>
-                      <div class="member-info">
-                        <h4>Fernando Novella</h4>
-        
-                        <p>Licenciado en Ingeniería Industrial por la Universidad Politécnica de Madrid. Comenzó su carrera trabajando en consultoría estratégica y tecnológica para el sector de banca privada (BBVA, Santander). Tras su paso por la consultoría, emprendió por primera vez escalando una startup desde cero a varios millones en facturación. Tras la venta de su primera startup, actualmente se encuentra emprendiendo de nuevo con una startup tecnológica orientada al sector turismo.</p>
-                        <div class="social">
-                          <a href="https://www.linkedin.com/in/fnovella/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        
-                        </div>
-                      </div>
-                    </div>
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/team/ferteam (Personalizado).jpeg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Fernando Novella</h4>
+
+                  <p>Licenciado en Ingeniería Industrial por la Universidad Politécnica de Madrid. Comenzó su carrera
+                    trabajando en consultoría estratégica y tecnológica para el sector de banca privada (BBVA,
+                    Santander). Tras su paso por la consultoría, emprendió por primera vez escalando una startup desde
+                    cero a varios millones en facturación. Tras la venta de su primera startup, actualmente se encuentra
+                    emprendiendo de nuevo con una startup tecnológica orientada al sector turismo.</p>
+                  <div class="social">
+
+                    <a href="https://www.linkedin.com/in/fnovella/" target="_blank"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
-
-               
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-      <!-- <div class="container">
-        <div class="row">
-    
-          <div id="Valen" class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/Valen (Personalizado).jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Miguel Valenzuela</h4>
-                <p>Licenciado en Administración y Dirección de Empresas por CUNEF. Comenzó su carrera centrado en la auditoría financiera trabajando para grandes corporaciones como KPMG o Grant Thornton. Tras aprobar los dos primeros niveles CFA (Analista Financiero Certificado), redirigió su carrera hacia el sector M&A (Fusiones y adquisiciones de empresas) donde actualmente lidera una boutique de más de 10 profesionales.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/miguel-valenzuela-pire-375797a4/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div id="Fer" class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/ferteam (Personalizado).jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Fernando Novella</h4>
 
-                <p>Licenciado en Ingeniería Industrial por la Universidad Politécnica de Madrid. Comenzó su carrera trabajando en consultoría estratégica y tecnológica para el sector de banca privada (BBVA, Santander). Tras su paso por la consultoría, emprendió por primera vez escalando una startup desde cero a varios millones en facturación. Tras la venta de su primera startup, actualmente se encuentra emprendiendo de nuevo con una startup tecnológica orientada al sector turismo.</p>
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/fnovella/" target="_blank"><i class="bi bi-linkedin"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      </div> -->
 
     </section><!-- /Team Section -->
-    
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -881,7 +915,8 @@ function scrollToContact() {
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -903,7 +938,8 @@ function scrollToContact() {
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje se ha enviado correctamente. Te contactaremos en las próximas 24 horas. ¡Gracias!</div>
+                  <div class="sent-message">Tu mensaje se ha enviado correctamente. Te contactaremos en las próximas 24
+                    horas. ¡Gracias!</div>
 
                   <button type="submit">Enviar mensaje.</button>
                 </div>
@@ -926,7 +962,7 @@ function scrollToContact() {
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" >
+            <a href="index.html">
               <span class="azul">THE TALENT LAB</span>
             </a>
             <div class="footer-contact pt-3">
@@ -969,12 +1005,13 @@ function scrollToContact() {
       </div>
     </div>
 
-   
+
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Preloader -->
   <div id="preloader"></div>
