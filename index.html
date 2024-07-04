@@ -477,60 +477,60 @@
     </section> <!-- /Services Section -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-  const cards = document.querySelectorAll('.productos-card');
-
-  cards.forEach(card => {
-    card.addEventListener('click', function () {
-      card.classList.toggle('is-flipped');
-      showSlide(0); // Initialize first slide
-    });
-    });
+        const cards = document.querySelectorAll('.productos-card');
     
-  });
-  
-
-
+        cards.forEach(card => {
+          card.addEventListener('click', function () {
+            card.classList.toggle('is-flipped');
+            
+            // Remove this line as it's already in the second script
+            // showSlide(0);
+          });
+        });
+      });
     </script>
+    
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const container = document.querySelector('.contenedor-cartas');
-  const bullets = document.querySelectorAll('.bullet');
-  let currentIndex = 0;
-  let isScrolling;
-
-  function showSlide(index) {
-    container.scrollTo({
-      left: container.offsetWidth * index,
-      behavior: 'smooth'
-    });
-    bullets.forEach((bullet, i) => {
-      bullet.classList.toggle('active', i === index);
-    });
-  }
-
-  function updateSlide() {
-    const newIndex = Math.round(container.scrollLeft / container.offsetWidth);
-    if (newIndex !== currentIndex) {
-      currentIndex = newIndex;
-      showSlide(currentIndex);
-    }
-  }
-
-  bullets.forEach((bullet, index) => {
-    bullet.addEventListener('click', () => {
-      currentIndex = index;
-      showSlide(index);
-    });
-  });
-
-  container.addEventListener('scroll', () => {
-    window.clearTimeout(isScrolling);
-    isScrolling = setTimeout(updateSlide, 100); // Adjust slide position after scrolling ends
-  });
-
-  showSlide(0); // Initialize first slide
-});
+      document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.contenedor-cartas');
+        const bullets = document.querySelectorAll('.bullet');
+        let currentIndex = 0;
+        let isScrolling;
+    
+        function showSlide(index) {
+          container.scrollTo({
+            left: container.offsetWidth * index,
+            behavior: 'smooth'
+          });
+          bullets.forEach((bullet, i) => {
+            bullet.classList.toggle('active', i === index);
+          });
+        }
+    
+        function updateSlide() {
+          const newIndex = Math.round(container.scrollLeft / container.offsetWidth);
+          if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+            showSlide(currentIndex);
+          }
+        }
+    
+        bullets.forEach((bullet, index) => {
+          bullet.addEventListener('click', () => {
+            currentIndex = index;
+            showSlide(index);
+          });
+        });
+    
+        container.addEventListener('scroll', () => {
+          window.clearTimeout(isScrolling);
+          isScrolling = setTimeout(updateSlide, 100); // Adjust slide position after scrolling ends
+        });
+    
+        showSlide(0); // Initialize first slide
+      });
     </script>
+    
 <script>
   let touchStartTime = 0;
 
