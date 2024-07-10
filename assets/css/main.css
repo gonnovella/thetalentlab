@@ -167,15 +167,15 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-.navmenu li {
- margin-right: 7.5rem;
-}
+
 
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
   }
-
+  .navmenu li {
+    margin-right: 7.5rem;
+   }
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -293,7 +293,19 @@ h6 {
     z-index: 9997;
 
   }
-
+  .navmenu .btn-getstarted
+  {
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
   .navmenu ul {
     display: none;
     position: absolute;
@@ -306,8 +318,8 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);
-   
-    height: 23.5%;
+  
+    height: 31%;
   }
 
   .navmenu a,
@@ -1701,7 +1713,7 @@ small.productos-badge {
   .contenedor-cartas {
     padding-inline: 0px;
     overflow-x: auto;
-align-self: center;
+    align-self: center;
     scroll-behavior: smooth;
     margin: auto ;
   }
@@ -1727,8 +1739,36 @@ align-self: center;
   .bullet.active {
     background-color: var(--accent-color);
   }
+}
+@media (max-width: 1250px) {
+  .contenedor-cartas {
+    padding-inline: 0px;
+    overflow-x: auto;
+    align-self: center;
+    scroll-behavior: smooth;
+    margin: auto ;
+  }
+
+  .productos-card {
+    margin: 0 40px 0 40px;
+    width: 768px;
+
+  }
 
 
+  .bullet {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color 0.6s ease;
+  }
+  .bullet.active {
+    background-color: var(--accent-color);
+  }
 }
 
 
